@@ -1,0 +1,73 @@
+# Mutable Minimum Value Queue in Java
+
+This project provides a simple Java implementation of a Mutable Minimum Value Queue, which enables to create a data structure containing objects sorted by the minimum value.
+It's based on a classic binary heap.
+Mostly coded for example but feel free to use and modify if it's useful.
+
+## Features
+
+- Add elements with min value getter.
+- Specify a method of the class stored for getting the value.
+- Remove any specified element.
+- Retrieve the element with the lowest value.
+- Check if the queue is empty.
+- Get the number of elements in the queue.
+
+## Getting Started
+
+### Prerequisites
+
+- Java Development Kit (JDK) 8 or higher.
+
+### Installation
+
+To use the Mutable Priority Queue in your Java project, you can either clone this repository or download the source code directly.
+
+```bash
+git clone https://github.com/Renaud-ia/mutable-priority-queue.git
+
+Usage
+
+    Import the MutableMinimumValueQueue class into your Java project.
+    Create an instance of MutableMinimumValueQueue, specifying the type of elements it will contain.
+    Use the provided methods to manipulate the queue as needed.
+    If you add multiple times an object with same hashCode, the second reference will erase the first
+    Not recommended for a lot of data (will work but not efficient when adding new objects)
+    Can be used with different kind of values (Integer, Long, Float, Double) but the precision of the value stored is a double.
+    Sorting will not change if you change the return value of the method after adding the object
+
+
+java
+
+import renaudIA.datastructure.MutableMinimumValueQueue;
+
+public class Main {
+    public static void main(String[] args) {
+        MutableMinimumValueQueue<String> queue = new MutableMinimumValueQueue<>();
+        queue.setValueGetter(String::length);
+
+        String ananasString = "ananas";
+        String cocoString = "coco";
+        String mangoString = "mango";
+
+        // Add elements
+        queue.add(ananasString);
+        queue.add(cocoString);
+        queue.add(mangoString);
+
+        // Remove specific element
+        queue.remove(cocoString);
+
+        // Get the object with minValue
+        String shortestString = queue.getMinObject();
+    }
+}
+
+For detailed usage examples and method documentation, refer to the Javadoc comments in the source code.
+
+Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request. For major changes, please open an issue first to discuss the proposed changes.
+License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
