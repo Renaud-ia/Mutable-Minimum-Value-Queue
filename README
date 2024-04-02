@@ -38,29 +38,28 @@ Usage
 - Sorting will not change if you change the return value of the method after adding the object
 
 ```java
-
 import renaudIA.datastructure.MutableMinimumValueQueue;
 
 public class Main {
-    public static void main(String[] args) {
-        MutableMinimumValueQueue<String> queue = new MutableMinimumValueQueue<>();
-        queue.setValueGetter(String::length);
+public static void main(String[] args) {
+MutableMinimumValueQueue<String> queue = new MutableMinimumValueQueue<>();
+queue.setValueGetter(String::length);
 
-        String ananasString = "ananas";
-        String cocoString = "coco";
-        String mangoString = "mango";
+String ananasString = "ananas";
+String cocoString = "coco";
+String mangoString = "mango";
 
-        // Add elements
-        queue.add(ananasString);
-        queue.add(cocoString);
-        queue.add(mangoString);
+// Add elements
+queue.add(ananasString);
+queue.add(cocoString);
+queue.add(mangoString);
 
-        // Remove specific element
-        queue.remove(cocoString);
+// Remove specific element
+queue.remove(cocoString);
 
-        // Get the object with minValue
-        String shortestString = queue.getMinObject();
-    }
+// Get the object with minValue
+String shortestString = queue.getMinObject();
+}
 }
 ```
 
