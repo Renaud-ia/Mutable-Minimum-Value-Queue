@@ -37,7 +37,7 @@ Usage
     Sorting will not change if you change the return value of the method after adding the object
 
 
-java
+'''java
 
 import renaudIA.datastructure.MutableMinimumValueQueue;
 
@@ -62,6 +62,7 @@ public class Main {
         String shortestString = queue.getMinObject();
     }
 }
+'''
 
 For detailed usage examples and method documentation, refer to the Javadoc comments in the source code.
 
