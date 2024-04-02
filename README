@@ -24,7 +24,7 @@ Mostly coded for example but feel free to use and modify if it's useful.
 To use the Mutable Priority Queue in your Java project, you can either clone this repository or download the source code directly.
 
 ```bash
-git clone https://github.com/Renaud-ia/mutable-priority-queue.git
+git clone https://github.com/Renaud-ia/mutable-minimum-value-queue.git
 
 Usage
 
