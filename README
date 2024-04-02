@@ -25,19 +25,19 @@ To use the Mutable Priority Queue in your Java project, you can either clone thi
 
 ```bash
 git clone https://github.com/Renaud-ia/mutable-minimum-value-queue.git
+```
 
 Usage
 
-    Import the MutableMinimumValueQueue class into your Java project.
-    Create an instance of MutableMinimumValueQueue, specifying the type of elements it will contain.
-    Use the provided methods to manipulate the queue as needed.
-    If you add multiple times an object with same hashCode, the second reference will erase the first
-    Not recommended for a lot of data (will work but not efficient when adding new objects)
-    Can be used with different kind of values (Integer, Long, Float, Double) but the precision of the value stored is a double.
-    Sorting will not change if you change the return value of the method after adding the object
+- Import the MutableMinimumValueQueue class into your Java project.
+- Create an instance of MutableMinimumValueQueue, specifying the type of elements it will contain.
+- Use the provided methods to manipulate the queue as needed.
+- If you add multiple times an object with same hashCode, the second reference will erase the first
+- Not recommended for a lot of data (will work but not efficient when adding new objects)
+- Can be used with different kind of values (Integer, Long, Float, Double) but the precision of the value stored is a double.
+- Sorting will not change if you change the return value of the method after adding the object
 
-
-'''java
+```java
 
 import renaudIA.datastructure.MutableMinimumValueQueue;
 
@@ -62,7 +62,7 @@ public class Main {
         String shortestString = queue.getMinObject();
     }
 }
-'''
+```
 
 For detailed usage examples and method documentation, refer to the Javadoc comments in the source code.
 
