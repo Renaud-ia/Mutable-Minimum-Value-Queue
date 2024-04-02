@@ -1,6 +1,6 @@
 # Mutable Minimum Value Queue in Java
 
-This project provides a simple Java implementation of a Mutable Minimum Value Queue, which enables to create a data structure containing objects sorted by the minimum value.
+This project provides a simple Java implementation of a Mutable Minimum Value Queue, which enables to create a data structure containing objects sorted by the minimum value of a specified method.
 It's based on a classic binary heap.
 Mostly coded for example but feel free to use and modify if it's useful.
 
@@ -71,3 +71,5 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+Java, Priority Queue, Mutable, Sorting, Data Structure, Algorithm
