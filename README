@@ -6,7 +6,7 @@ Mostly coded for example but feel free to use and modify if it's useful.
 
 ## Features
 
-- Add elements with min value getter.
+- Add elements 
 - Specify a method of the class stored for getting the value.
 - Remove any specified element.
 - Retrieve the element with the lowest value.
